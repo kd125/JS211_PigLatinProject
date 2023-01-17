@@ -12,8 +12,12 @@ const rl = readline.createInterface({
 
 
 const pigLatin = (word) => {
+  const wordToArrary = pigLatin.split("");
 
-  // Your code here
+  let vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"]
+
+  
+
 
 }
 
