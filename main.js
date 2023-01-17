@@ -12,11 +12,23 @@ const rl = readline.createInterface({
 
 
 const pigLatin = (word) => {
-  const wordToArrary = pigLatin.split("");
+  let inputWord = word.trim().toLowercase();
+  let vowels = "aeiouAEIOU";
+  let piggedWord = "";
 
-  let vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"]
+  for(let i = 0; i < inputWord.length(); i++){
+    if(vowels.includes(inputWord[0]){
+      piggedWord = inputWord + 'yay';
+    }
+    else if(vowels.includes(inputWord[i]){
+      let firstHalf = inputWord.slice(0, i);
+      let secondHalf = inputWord.slice(i);
+      piggedWord = firstHalf + secondHalf + 'ay';
+      break;
+    }
 
-  
+    return piggedWord;
+  }
 
 
 }
