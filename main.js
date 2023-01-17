@@ -12,24 +12,22 @@ const rl = readline.createInterface({
 
 
 const pigLatin = (word) => {
-  let inputWord = word.trim().toLowercase();
+  const inputWord = word.trim().toLowerCase();
   let vowels = "aeiouAEIOU";
   let piggedWord = "";
 
-  for(let i = 0; i < inputWord.length(); i++){
-    if(vowels.includes(inputWord[0]){
+  for(let i = 0; i < inputWord.length; i++){
+    if(vowels.includes(inputWord[0])){
       piggedWord = inputWord + 'yay';
     }
-    else if(vowels.includes(inputWord[i]){
+    else if(vowels.includes(inputWord[i])){
       let firstHalf = inputWord.slice(0, i);
       let secondHalf = inputWord.slice(i);
-      piggedWord = firstHalf + secondHalf + 'ay';
+      piggedWord = secondHalf + firstHalf + 'ay';
       break;
     }
-
-    return piggedWord;
   }
-
+  return piggedWord;
 
 }
 
