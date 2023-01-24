@@ -3,17 +3,21 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    <script src="main.js"></script>
+
   </head>
   <body>
     <h1>Hello World!</h1>
     <hr/>
     <div id="display-element"></div>
-    <form>
+    <form id="inputForm">
+      <label for="word to be pigged">Insert Word</label>
       <input id="user-input" type="text">
       <!-- How do you get this input sent to the pigLatin() function? -->
-      <button onclick="pigLatin()">Translate</button>
+      <button id="submitButton" type="submit">Translate</button>
     </form>  
+    <p>Pigged Word: </p>
+    <p id="text-output" class="textOutput"></p>
     <hr/>
+    <script src="main.js"></script>
   </body>
 </html>
